@@ -1,0 +1,27 @@
+************Classların içinde hangi metodlar var (GeniusWeb'in sağladığı)************************
+
+1) Bid:
+	a) Bid{private final HashMap<String,Value> issuevalues;}
+
+	b) getValue(String issue): issue'in valuesini return ediyor.
+
+	c) containsIssue(String issue): o issue var mı yok mu onu konrtol edip boolean döndürüyor.
+
+	d) get Issues( String issue): issuelerin hepsini Set<String> şeklinde çekiyoruz.
+
+	e) merge (Bid otherbid): bizim bidlerle başka bidleri ilk başta ayynımı diye konrtol ediyor, değilse birleştiriyor.
+
+	f) Map<String,Value> getIssueValues() : bütün issuelerimizin valuelerini return ediyor.
+
+
+
+2) Progress:
+
+	a)public interface Progress {
+
+    		Double get(Long var1);
+
+    		Date getTerminationTime();
+
+    		boolean isPastDeadline(Long var1);
+	  }
